@@ -1,2 +1,2 @@
 # sharezo-privacy-policy
-hosting privacy policy for sharezo.com
+hosting Privacy Policy and Terms of service for sharezo.com
