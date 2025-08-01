@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareZo Terms of Service</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #000000;
+            background: linear-gradient(135deg, #F5F5F5 0%, #E8E8E8 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #FFFFFF;
+            box-shadow: 0 20px 60px rgba(152, 60, 151, 0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #983C97 0%, #565156 100%);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="50" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="30" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            pointer-events: none;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 1;
+            padding: 10px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+        }
+
+        .effective-date {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            display: inline-block;
+            font-weight: 600;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .intro {
+            background: linear-gradient(135deg, rgba(152, 60, 151, 0.1) 0%, rgba(86, 81, 86, 0.05) 100%);
+            padding: 25px;
+            border-left: 5px solid #983C97;
+            margin: 30px 0;
+            border-radius: 0 12px 12px 0;
+            border: 1px solid rgba(152, 60, 151, 0.1);
+        }
+
+        .toc {
+            background: #F5F5F5;
+            border: 2px solid #E8E8E8;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+
+        .toc h2 {
+            color: #983C97;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            columns: 2;
+            column-gap: 30px;
+        }
+
+        .toc li {
+            margin-bottom: 12px;
+            break-inside: avoid;
+        }
+
+        .toc a {
+            color: #565156;
+            text-decoration: none;
+            padding: 8px 12px;
+            display: block;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        .toc a:hover {
+            background: #983C97;
+            color: white;
+            transform: translateX(5px);
+        }
+
+        h2 {
+            color: #983C97;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #983C97;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #1B9151;
+        }
+
+        h3 {
+            color: #565156;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+            color: #000000;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #000000;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(27, 145, 81, 0.1) 0%, rgba(27, 145, 81, 0.05) 100%);
+            border: 1px solid rgba(27, 145, 81, 0.2);
+            border-left: 5px solid #1B9151;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, rgba(255, 193, 7, 0.1) 0%, rgba(255, 193, 7, 0.05) 100%);
+            border: 1px solid rgba(255, 193, 7, 0.3);
+            border-left: 5px solid #FFC107;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #983C97 0%, #565156 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin-top: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="contactgrain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23contactgrain)"/></svg>');
+            pointer-events: none;
+        }
+
+        .contact-section h2 {
+            margin-top: 0;
+            border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-section h2::after {
+            background: #1B9151;
+        }
+
+        .contact-section p {
+            color: rgba(255, 255, 255, 0.9);
+            position: relative;
+            z-index: 1;
+        }
+
+        .email-link {
+            color: #1B9151;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2em;
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 25px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+            border: 2px solid #1B9151;
+            position: relative;
+            z-index: 1;
+        }
+
+        .email-link:hover {
+            background: #1B9151;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(27, 145, 81, 0.3);
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        strong {
+            color: #983C97;
+            font-weight: 600;
+        }
+
+        .brand-accent {
+            background: linear-gradient(135deg, #983C97 0%, #1B9151 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+        }
+
+        .caps-text {
+            font-size: 0.9em;
+            background: rgba(152, 60, 151, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #983C97;
+            margin: 20px 0;
+        }
+
+        .section-divider {
+            text-align: center;
+            margin: 60px 0 40px;
+            color: #983C97;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                border-radius: 15px;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .toc ul {
+                columns: 1;
+            }
+
+            .logo {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #F5F5F5;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #983C97;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #565156;
+        }
+
+        .navigation {
+            background: #F5F5F5;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .navigation a {
+            color: #983C97;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .navigation a:hover {
+            background: #983C97;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            <img src="sharezo-logo.png" alt="ShareZo Logo">
+        </div>
+        <h1>ShareZo Terms of Service</h1>
+        <div class="effective-date">Effective as of April 18, 2024</div>
+    </div>
+
+    <div class="content">
+        <div class="navigation">
+            <a href="../">← Privacy Policy</a>
+            <a href="#platform-terms">Platform Terms</a>
+            <a href="#creator-terms">Creator Terms</a>
+            <a href="#mobile-terms">Mobile Terms</a>
+        </div>
+
+        <div class="intro">
+            <p>Welcome, and thank you for your interest in the <strong class="brand-accent">ShareZo Platform</strong> ("ShareZo", "we" or "us"), our website at www.ShareZo.com and associated mobile applications ("Website"), and any other services or resources that are accessed or enabled via the Website (collectively with the Website, the "Services").</p>
+
+            <div class="warning-box">
+                <p><strong>⚠️ IMPORTANT:</strong> Please read these Platform Terms of Service ("Terms of Service") carefully. While we've taken all effort to explain the provision of our Services to you in as simple and straightforward a manner as possible, there will inevitably be clauses that do contain a little bit of 'legalese'. If you require any further explanation or clarification with regards to any of the following, please feel free to get in touch with us and we would be more than happy to provide further explanation and assistance.</p>
+            </div>
+        </div>
+
+        <div class="caps-text">
+            <p><strong>BY ACCESSING OR USING THE SERVICES IN ANY WAY, INCLUDING BY CLICKING ON AN "I ACCEPT" BUTTON, COMPLETING THE ACCOUNT REGISTRATION PROCESS, AND/OR BROWSING THE WEBSITE, YOU REPRESENT THAT:</strong> (1) YOU HAVE READ, UNDERSTAND, AND AGREE TO BE BOUND BY THESE TERMS OF SERVICE; (2) YOU ARE OF LEGAL AGE TO FORM A BINDING CONTRACT WITH SHAREZO; AND (3) YOU HAVE THE AUTHORITY TO ENTER INTO THESE TERMS OF SERVICE PERSONALLY OR ON BEHALF OF THE ENTITY YOU HAVE NAMED AS THE USER, AND TO BIND THAT ENTITY TO THESE TERMS OF SERVICE.</p>
+        </div>
+
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#who-we-are">Who we are</a></li>
+                <li><a href="#who-can-use">Who can use the Services</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#account-registration">Account registration</a></li>
+                <li><a href="#using-services">Using the Services</a></li>
+                <li><a href="#responsibility-content">Responsibility for Content</a></li>
+                <li><a href="#ownership">Ownership</a></li>
+                <li><a href="#interactions">Interactions with other users</a></li>
+                <li><a href="#fees">Fees and purchase terms</a></li>
+                <li><a href="#release">Release</a></li>
+                <li><a href="#indemnification">Indemnification</a></li>
+                <li><a href="#disclaimer">Disclaimer of warranties</a></li>
+                <li><a href="#liability">Limitation of liability</a></li>
+                <li><a href="#term-termination">Term and termination</a></li>
+                <li><a href="#international">International users</a></li>
+                <li><a href="#third-party">Third-party services</a></li>
+                <li><a href="#general">General provisions</a></li>
+            </ul>
+        </div>
+
+        <div class="section" id="platform-terms">
+            <h2>SHAREZO PLATFORM TERMS OF SERVICE</h2>
+
+            <div class="highlight-box">
+                <p><strong>Platform Overview:</strong> The Services include a platform which allows users to offer to sell, sell and buy tangible and/or digital goods, assets, products, services and benefits. All items available through the platform, whether digital or tangible, are furnished by or on behalf of sellers in connection with such sales.</p>
+            </div>
+
+            <div class="section" id="who-we-are">
+                <h3>Who We Are</h3>
+                <p>The Services are owned and operated by ShareZo, Inc., a company incorporated in the United States of America. You can contact us at <a href="mailto:help@ShareZo.com" style="color: #1B9151; font-weight: 600;">help@ShareZo.com</a></p>
+            </div>
+
+            <div class="section" id="who-can-use">
+                <h3>Who Can Use the Services</h3>
+                <p>No one under the age of 18 is allowed to create an Account or otherwise use the Services. By using the Services, you represent that you are:</p>
+                <ul>
+                    <li>over the age of 18 and agree to form a binding contract with us;</li>
+                    <li>not barred from using the Services under the applicable law of the country where you are located; and</li>
+                    <li>not someone who has previously had an Account disabled on the Services for a violation of these Terms of Service, any applicable law or any of our policies.</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <p><strong>Exception for Creators:</strong> If you are creating an account as a Creator and you are between the ages of 15 and 17, you may use the Services with ShareZo prior approval and with a parent or guardian's verified written consent.</p>
+                </div>
+            </div>
+
+            <div class="section" id="services">
+                <h3>Services</h3>
+                <p>The Services consist of the ShareZo website and mobile applications, the ShareZo platform and any other products and services made available by ShareZo. ShareZo is a platform where users can:</p>
+                <ul>
+                    <li>Access premium information, data, text, music, sound, photographs, graphics, video, messages, tags and/or other materials</li>
+                    <li>Connect with content creators ("Creator(s)")</li>
+                    <li>Join exclusive members-only communities for those Creators ("Membership Communities")</li>
+                    <li>Purchase and sell digital and tangible merchandise and collectibles</li>
+                    <li>Interact with Creators and other Members</li>
+                </ul>
+
+                <h4>License to use the Services</h4>
+                <p>The Services and the information and content available on or through them are protected by copyright laws. Subject to the terms of these Terms of Service, ShareZo grants you a limited license to access and use the Services on the basis that this license is:</p>
+                <ul>
+                    <li><strong>not a commercial license</strong> – you can only access and use the Services for your own personal, non-commercial use;</li>
+                    <li><strong>non-transferable</strong> – you cannot pass this right to someone else;</li>
+                    <li><strong>non-exclusive</strong> – other people can access and use the Services;</li>
+                    <li><strong>revocable</strong> – we have the right to remove your ability to use the Services at any time; and</li>
+                    <li><strong>limited</strong> – the license does not extend beyond what has just been described above.</li>
+                </ul>
+
+                <h4>Certain Restrictions</h4>
+                <p>The rights granted to you in these Terms of Service are subject to the following restrictions:</p>
+                <ul>
+                    <li>You cannot violate someone else's rights by impersonating them, posting their private or confidential information, or otherwise infringing their intellectual property rights, publicity rights or right to privacy.</li>
+                    <li>You must follow our Community Guidelines.</li>
+                    <li>You may not post content belonging to another person, unless you have obtained a license or permission from such person in advance.</li>
+                    <li>You cannot use the Services to carry out or enable any unlawful, misleading or otherwise fraudulent activity.</li>
+                    <li>You cannot use the Services to harass, intimidate, defame, or bully other users.</li>
+                    <li>You cannot conduct yourself in a vulgar, offensive, harassing or objectionable manner while using the Services.</li>
+                    <li>You cannot use the Services to generate unsolicited advertisement or spam.</li>
+                    <li>You cannot engage in any activity that would interfere with or impair the delivery of our Services or its intended operation.</li>
+                </ul>
+            </div>
+
+            <div class="section" id="account-registration">
+                <h3>Account Registration</h3>
+
+                <h4>Registering Your Account</h4>
+                <p>In order to access certain features of the Services, you may be required to become a Member. For purposes of these Terms of Service, a "Member" is a user who has registered an account on the Services ("Account").</p>
+
+                <h4>Registration Data</h4>
+                <p>In registering an Account on the Services, you agree to:</p>
+                <ul>
+                    <li>provide true, accurate, current and complete information about yourself as prompted by the registration form (the "Registration Data");</li>
+                    <li>maintain and promptly update the Registration Data to keep it true, accurate, current and complete.</li>
+                </ul>
+
+                <p>You are responsible for all activities that occur under your Account. You agree that you will monitor your Account to restrict use by minors, and you will accept full responsibility for any unauthorized use of the Services by minors.</p>
+
+                <h4>Your Account</h4>
+                <p>You are responsible for maintaining the confidentiality of your password and account details, if any, and are fully responsible for any and all activities that occur under your password or account. You agree to immediately notify ShareZo of any unauthorized use of your password or account or any other breach of security.</p>
+            </div>
+
+            <div class="section" id="using-services">
+                <h3>Using the Services</h3>
+
+                <h4>Platform</h4>
+                <p>The Services include a platform (the "Platform") where Creators can sell benefits ("Benefits"), including, but not limited to, "Memberships" whose ownership is stored on digital ledgers. Pricing and payment terms, including the specific details with relation to the offering of any Memberships, shall be set forth at the point of sale.</p>
+
+                <div class="warning-box">
+                    <p><strong>Important:</strong> ShareZo is not responsible for the conduct, whether online or offline, of any user of the Services. ShareZo will not be liable for any claim, injury or damage arising in connection with your interactions with other users of the Services or your use of or inability to use any Memberships purchased through the Services.</p>
+                </div>
+
+                <h4>Types of Memberships</h4>
+                <p>ShareZo offers two types of Membership:</p>
+
+                <ol>
+                    <li><strong>Subscriptions:</strong> You can choose to subscribe to access, view, and interact with exclusive Content and/or Membership Communities and/or enjoy other benefits. Subscriptions will automatically be renewed at the end of the relevant subscription period at the then-current subscription fee, except if your payment method payment is declined or if you have cancelled your Subscription.</li>
+
+                    <li><strong>Super Memberships:</strong> You can choose to purchase a Super Membership to access, view, and interact with exclusive Content and/or Membership Communities and/or enjoy other real life benefits. When you purchase a Super Membership, you will continue to enjoy the benefits attached to it until the expiration date specified by the Creator.</li>
+                </ol>
+            </div>
+
+            <div class="section" id="responsibility-content">
+                <h3>Responsibility for Content</h3>
+
+                <h4>Types of Content</h4>
+                <p>You acknowledge that all Content shall be the sole responsibility of the party from whom such Content originated. This means that you, and not ShareZo, are entirely responsible for all Content that you upload, post, sell, e-mail, transmit or otherwise make available ("Make Available") through the Services ("Your Content").</p>
+
+                <h4>No Obligation to Pre-Screen Content</h4>
+                <p>You acknowledge that we have no obligation to pre-screen Content (including, but not limited to, User Content), although we reserve the right in our sole discretion to monitor, pre-screen, refuse or remove any Content.</p>
+
+                <div class="highlight-box">
+                    <h4>Prohibition on Leaked Content</h4>
+                    <p>You shall not distribute, post, spread, display, transmit, publish or otherwise provide any Restricted Content to other persons ("Leak"). If you violate this prohibition, ShareZo may impose a leaking fee of <strong>$50 per site, platform or medium</strong> on which the leaked Content can be found, plus an additional Leak remediation fee of <strong>$150</strong> if you do not immediately remove all leaked Content.</p>
+                </div>
+            </div>
+
+            <div class="section" id="ownership">
+                <h3>Ownership</h3>
+
+                <h4>Services</h4>
+                <p>Except with respect to Your Content and User Content, you agree that ShareZo and our licensors own all rights, title and interest in and to the Services.</p>
+
+                <h4>Your Content</h4>
+                <p>ShareZo does not claim ownership of Your Content. However, when you post or publish Your Content on, in or through the Services, you grant ShareZo a fully paid, royalty-free, perpetual, irrevocable, worldwide, non-exclusive and fully sublicensable right and license to use, license, distribute, reproduce, modify, adapt, publicly perform, and publicly display Your Content for the purposes of operating and providing the Services.</p>
+            </div>
+
+            <div class="section" id="fees">
+                <h3>Fees and Purchase Terms</h3>
+
+                <h4>Fees</h4>
+                <p>Registering for the Services is free; however, we charge certain fees for various transactions through your use of the Services ("Fees") as set forth at the point of sale. All amounts are quoted in US dollars unless otherwise stated.</p>
+
+                <h4>Payment</h4>
+                <p>You agree to pay any Fees or charges incurred by your Account in accordance with the fees, charges and billing terms then-currently in effect. By providing us with your Payment Method details, you agree that ShareZo is authorized to immediately invoice your Account for all fees and charges due and payable to us hereunder.</p>
+            </div>
+
+            <div class="section" id="disclaimer">
+                <h3>Disclaimer of Warranties and Conditions</h3>
+
+                <div class="caps-text">
+                    <p><strong>AS IS:</strong> YOU EXPRESSLY UNDERSTAND AND AGREE THAT, TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, YOUR USE OF THE SERVICES IS AT YOUR SOLE RISK, AND THE SERVICES ARE PROVIDED ON AN 'AS IS' AND 'AS AVAILABLE' BASIS.</p>
+                </div>
+
+                <p>ShareZo expressly disclaims all warranties, representations and conditions of any kind, whether express or implied, including, but not limited to, any implied warranties or conditions of merchantability, fitness for a particular purpose and non-infringement arising from use of the Services.</p>
+            </div>
+
+            <div class="section" id="liability">
+                <h3>Exclusion and Limitation of Liability</h3>
+
+                <div class="caps-text">
+                    <p><strong>Cap on Liability:</strong> To the fullest extent permitted by applicable law, ShareZo and its affiliates will not be liable to you for more than the greater of: (1) the total amount paid to ShareZo by you during the one-month period prior to the act, omission or occurrence giving rise to such liability; or (2) $100.</p>
+                </div>
+            </div>
+
+            <div class="section" id="term-termination">
+                <h3>Term and Termination</h3>
+
+                <h4>Termination by ShareZo</h4>
+                <p>ShareZo reserves the right to terminate your access to some or all of the Services, including by closing your Account, without notice to you in the event we reasonably believe that you are in breach of any part of these Terms of Service.</p>
+
+                <h4>Effect of Termination</h4>
+                <p>Termination of any Services includes removal of access to such Services and barring of further use of the Services. Termination of all Services also includes deletion of your Account and all related information, files and Content associated with or inside your Account.</p>
+            </div>
+        </div>
+
+        <div class="section-divider" id="creator-terms">
+            ◈ ◈ ◈<br>
+            CREATOR TERMS OF SERVICE
+        </div>
+
+        <div class="intro">
+            <p>Welcome, and thank you for your interest in the ShareZo Platform and becoming a <strong class="brand-accent">Creator</strong> on our Platform.</p>
+
+            <div class="warning-box">
+                <p><strong>Important:</strong> These Creator Terms of Service are additional terms which apply to you if you use our Services as a Creator. Notwithstanding being bound by these terms, you will continue to be subject to the Platform Terms of Service.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Obligations of a Creator</h3>
+
+            <h4>Using our Services as a Creator</h4>
+            <p>When registering with us or using the Services as a Creator, you agree and acknowledge that you are responsible for:</p>
+            <ul>
+                <li>any and all activity on your Creator Account;</li>
+                <li>any interaction from your Creator Account with any other users of our Services;</li>
+                <li>the Creator Content uploaded, posted, published or displayed using your Creator Account; and</li>
+                <li>any offers and/or Subscription Benefits you provide, and/or products you sell using your Creator Account.</li>
+            </ul>
+
+            <h4>Offers and Subscription Benefits</h4>
+            <p>When providing certain sales, offers, Subscription Benefits, or other services to other users of our Services, you acknowledge and agree that you are solely responsible for providing and honoring those sales, offers and Subscription Benefits. You warrant that you will honor the offers and Subscription Benefits you offer via the Services.</p>
+
+            <h4>Creator Content</h4>
+            <p>Any Creator Content uploaded, published, displayed or posted to the Platform by you shall comply with the Terms of Service and Creator Terms of Service. ShareZo does not claim ownership of your Creator Content, however, when you post or publish your Creator Content on, in or through the Services, you warrant that you own and/or have a royalty-free, perpetual, irrevocable, worldwide, non-exclusive right and license to use, display, share and exploit your Creator Content worldwide.</p>
+
+            <h4>Publicity</h4>
+            <p>You agree that ShareZo may publicly identify you as a Creator on the ShareZo platform and include you in its marketing and promotional materials. You hereby grant ShareZo a non-exclusive, irrevocable, sublicensable, royalty-free right and license to use your name, image, likeness, trademarks, logos and other identifiers in connection with the foregoing purposes.</p>
+        </div>
+
+        <div class="section">
+            <h3>Payments to Sellers</h3>
+
+            <h4>Sale by a Seller</h4>
+            <p>In the event of a sale of a Membership or other Creator Content or a Tip by you through the Platform (a "Sale"), ShareZo shall pay you a percentage (%) of ShareZo's Net Consideration in respect of the Sale (the "Sale Proceeds").</p>
+
+            <h4>Payment Terms</h4>
+            <p>When cashing out, you can select to receive your funds via bank transfer. <strong>We take a 20% fee of all credit/debit Sales.</strong> By default, ShareZo shall pay Sale Proceeds owed to you bi-weekly within thirty (30) days of the end of each such bi-weekly period to your bank account as identified in your Creator Account.</p>
+
+            <div class="warning-box">
+                <h4>Withholding of Payment</h4>
+                <p>ShareZo may withhold all or any part of the Sale Proceeds due to you but not yet paid out if we reasonably believe that you have breached any part of these Terms of Service, or we reasonably suspect that all or any part of the Sale Proceeds result from unlawful or fraudulent activity.</p>
+            </div>
+        </div>
+
+        <div class="section-divider" id="mobile-terms">
+            ◈ ◈ ◈<br>
+            MOBILE TERMS OF SERVICE
+        </div>
+
+        <div class="intro">
+            <p><strong>Effective as of June 1, 2023</strong></p>
+        </div>
+
+        <div class="section">
+            <h3>ShareZo Messaging</h3>
+            <ul>
+                <li>As part of the ShareZo Messaging program, you can expect to receive messages as configured and detailed in the SMS Notification Center, including, but not limited to, messages for every direct message you receive and messages for every new post from creators you follow.</li>
+
+                <li>You can cancel the SMS service at any time. Alternatively, you may text "STOP" to the short code. If you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed.</li>
+
+                <li>If you are experiencing issues with the messaging program you can reply with the keyword HELP for more assistance, or you can get help directly at <a href="mailto:help@sharezo.com" style="color: #1B9151; font-weight: 600;">help@sharezo.com</a>.</li>
+
+                <li>Carriers are not liable for delayed or undelivered messages.</li>
+
+                <li>As always, message and data rates may apply for any messages sent to you from us and to us from you. Message frequency varies. If you have any questions about your text plan or data plan, it is best to contact your wireless provider.</li>
+            </ul>
+        </div>
+
+        <div class="contact-section">
+            <h2>Questions, Complaints, Claims</h2>
+            <p>If you have any questions, complaints or claims with respect to the Services, we will do our best to address your concerns. If you feel that your concerns have been addressed incompletely, we invite you to let us know for further investigation.</p>
+            <a href="mailto:help@ShareZo.com" class="email-link">help@ShareZo.com</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
